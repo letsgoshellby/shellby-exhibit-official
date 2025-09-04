@@ -10,23 +10,29 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[600px] bg-gradient-to-br from-purple-600 to-blue-600 text-white">
+      <section className="relative h-[600px] bg-gradient-to-br from-[#059669] to-[#06b37a] text-white">
         <div className="absolute inset-0 bg-black/20" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-2xl">
-            <Badge className="mb-4 bg-white/20 text-white border-white/30">2025 교육 박람회</Badge>
-            <h1 className="text-5xl font-bold mb-4">
+            <Badge className="mb-4 bg-white/20 text-white border-white/30">2025 대한민국 사회서비스 박람회</Badge>
+            <h1 className="text-4xl font-bold mb-4">
               우리 아이에게 맞는<br />
               전문가를 만나보세요
             </h1>
             <p className="text-xl mb-8 text-white/90">
-              느린학습자 아이를 위한 맞춤형 전문가 상담 서비스
+              느린학습자 아이를 위한<br />
+              맞춤형 전문가 상담 서비스
             </p>
             <div className="flex gap-4">
-              <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100">
+              <Button size="lg" className="bg-white text-[#059669] hover:bg-gray-100 font-semibold">
                 <Link href="/shellby-test">우리 아이 유형 테스트</Link>
               </Button>
-              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="text-[#059669] border-white bg-white hover:bg-gray-100 font-semibold"
+                onClick={() => window.open('https://forms.google.com/example-form', '_blank')}
+              >
                 상담 예약하기
               </Button>
             </div>
@@ -45,8 +51,8 @@ export default function Home() {
                 <CardTitle className="text-lg">일시</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="font-semibold">2025년 2월 15-17일</p>
-                <p className="text-sm text-gray-600">3일간</p>
+                <p className="font-semibold">2025년 9월 9-10일</p>
+                <p className="text-sm text-gray-600">2일간</p>
               </CardContent>
             </Card>
             
@@ -56,8 +62,8 @@ export default function Home() {
                 <CardTitle className="text-lg">운영시간</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="font-semibold">10:00 - 18:00</p>
-                <p className="text-sm text-gray-600">마지막날 17:00 마감</p>
+                <p className="font-semibold">13:00 - 15:00</p>
+                <p className="text-sm text-gray-600">마지막날 15:30 마감</p>
               </CardContent>
             </Card>
             
@@ -67,8 +73,8 @@ export default function Home() {
                 <CardTitle className="text-lg">장소</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="font-semibold">코엑스 Hall A</p>
-                <p className="text-sm text-gray-600">부스 번호: A-15</p>
+                <p className="font-semibold">양재 aT센터 제1전시장</p>
+                <p className="text-sm text-gray-600">부스 번호: A-03</p>
               </CardContent>
             </Card>
             
@@ -78,7 +84,7 @@ export default function Home() {
                 <CardTitle className="text-lg">참가대상</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="font-semibold">학부모 & 교육 전문가</p>
+                <p className="font-semibold">학부모 & 교육 전문가 등</p>
                 <p className="text-sm text-gray-600">사전등록 시 혜택</p>
               </CardContent>
             </Card>
@@ -101,7 +107,7 @@ export default function Home() {
                 <Brain className="w-12 h-12 text-purple-600 mb-4" />
                 <CardTitle>전문가 매칭</CardTitle>
                 <CardDescription>
-                  언어치료, 심리상담, 특수교육 등 다양한 분야의 검증된 전문가를 매칭해드립니다.
+                  학부모를 위한 아이 이해하기, 사회성 등 다양한 분야의 검증된 전문가를 매칭해드립니다.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -111,7 +117,7 @@ export default function Home() {
                 <Heart className="w-12 h-12 text-purple-600 mb-4" />
                 <CardTitle>맞춤형 진단</CardTitle>
                 <CardDescription>
-                  아이의 학습 유형과 특성을 정확히 파악하여 개인별 맞춤 교육 계획을 수립합니다.
+                  셸메이트의 전문가는 아이의 학습 유형과 특성을 정확히 파악하여 개인별 맞춤 교육 계획을 수립합니다.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -142,32 +148,32 @@ export default function Home() {
                 <div className="flex items-start gap-3">
                   <Badge className="bg-purple-600">EVENT 1</Badge>
                   <div>
-                    <p className="font-semibold">무료 아이 유형 테스트 & 상담</p>
-                    <p className="text-sm text-gray-600">현장에서 전문가와 1:1 상담 (선착순 100명)</p>
+                    <p className="font-semibold">“내 자녀의 유형은?” 테스트</p>
+                    <p className="text-sm text-gray-600">1분 만에 우리 아이의 성향 알아보고 선물까지!</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-3">
                   <Badge className="bg-purple-600">EVENT 2</Badge>
                   <div>
-                    <p className="font-semibold">사전등록 할인</p>
-                    <p className="text-sm text-gray-600">박람회 방문 전 사전등록 시 첫 달 이용료 30% 할인</p>
+                    <p className="font-semibold">셸비만의 단독 굿즈 쓸어담기</p>
+                    <p className="text-sm text-gray-600">사회서비스박람회를 위해 제작된 셸비 특별 굿즈 증정!</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-3">
                   <Badge className="bg-purple-600">EVENT 3</Badge>
                   <div>
-                    <p className="font-semibold">추천인 이벤트</p>
-                    <p className="text-sm text-gray-600">친구 추천 시 양쪽 모두 추가 할인 혜택</p>
+                    <p className="font-semibold">셸비 캐릭터 색칠공부</p>
+                    <p className="text-sm text-gray-600">부스에서 진행하는 캐릭터 색칠공부 이벤트에도 참여해보세요!</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-3">
                   <Badge className="bg-purple-600">EVENT 4</Badge>
                   <div>
-                    <p className="font-semibold">교육 자료 패키지 증정</p>
-                    <p className="text-sm text-gray-600">가입자 전원 맞춤형 교육 가이드북 제공</p>
+                    <p className="font-semibold">상담 앱 셸메이트에 할인 쿠폰 지급</p>
+                    <p className="text-sm text-gray-600">런칭 즉시 사용 가능한 사회서비스박람회 특전 쿠폰 지급!</p>
                   </div>
                 </div>
               </CardContent>
@@ -183,19 +189,18 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <Card>
               <CardHeader>
-                <CardTitle>코엑스 Hall A</CardTitle>
-                <CardDescription>서울특별시 강남구 영동대로 513</CardDescription>
+                <CardTitle>양재 aT센터 제1전시장</CardTitle>
+                <CardDescription>서울특별시 서초구 강남대로 27</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
                   <h4 className="font-semibold mb-2">🚇 지하철</h4>
                   <p className="text-sm text-gray-600">
-                    2호선 삼성역 5, 6번 출구 (도보 10분)<br />
-                    9호선 봉은사역 7번 출구 (도보 15분)
+                    신분당선 삼성역 4번 출구 (도보 60m)<br />
                   </p>
                 </div>
                 
-                <div>
+                {/* <div>
                   <h4 className="font-semibold mb-2">🚌 버스</h4>
                   <p className="text-sm text-gray-600">
                     간선: 146, 341, 360, 333, 740<br />
@@ -209,7 +214,7 @@ export default function Home() {
                     코엑스 지하주차장 이용<br />
                     박람회 참가자 3시간 무료 (부스에서 확인 도장)
                   </p>
-                </div>
+                </div> */}
               </CardContent>
             </Card>
             
@@ -226,14 +231,18 @@ export default function Home() {
 
       {/* Floating Action Buttons */}
       <div className="fixed bottom-6 right-6 flex flex-col gap-3">
-        <Button size="lg" className="rounded-full shadow-lg bg-yellow-400 hover:bg-yellow-500 text-black">
+        <Button 
+          size="lg" 
+          className="rounded-full shadow-lg bg-yellow-400 hover:bg-yellow-500 text-black"
+          onClick={() => window.open('http://pf.kakao.com/_gPdPn', '_blank')}
+        >
           <MessageCircle className="w-5 h-5 mr-2" />
           카톡 상담
         </Button>
-        <Button size="lg" className="rounded-full shadow-lg">
+        {/* <Button size="lg" className="rounded-full shadow-lg">
           <Phone className="w-5 h-5 mr-2" />
-          전화 문의
-        </Button>
+          메일 문의
+        </Button> */}
       </div>
     </main>
   );

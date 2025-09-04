@@ -1,6 +1,13 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@font-face {
+  font-family: "ChangwonDangamAsac";
+  src: url(/fonts/ChangwonDangamAsac-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
