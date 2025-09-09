@@ -243,7 +243,7 @@ const downloadResultImage = async () => {
                   </div> */}
                   {/* 실제 캐릭터 이미지 */}
                   <div className="w-48 h-48 mx-auto bg-white rounded-lg shadow-lg flex items-center justify-center p-4">
-                    <Image 
+                    <img 
                       src={`/images/${character.image}`}
                       alt={character.name}
                       className="max-w-full max-h-full object-contain"
