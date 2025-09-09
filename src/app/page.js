@@ -33,61 +33,9 @@ export default function Home() {
                 className="text-[#059669] border-white bg-white hover:bg-gray-100 font-semibold"
                 onClick={() => window.open('https://forms.gle/qtPowV7FRTM4L9Rj9', '_blank')}
               >
-                출시 알림받기
+                솔루션 사전예약
               </Button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Exhibition Info Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">박람회 정보</h2>
-          <div className="grid md:grid-cols-4 gap-6">
-            <Card className="text-center">
-              <CardHeader className="pb-4">
-                <Calendar className="w-8 h-8 mx-auto text-purple-600 mb-2" />
-                <CardTitle className="text-lg">일시</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="font-semibold">2025년 9월 9-10일</p>
-                <p className="text-sm text-gray-600">2일간</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center">
-              <CardHeader className="pb-4">
-                <Clock className="w-8 h-8 mx-auto text-purple-600 mb-2" />
-                <CardTitle className="text-lg">운영시간</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="font-semibold">13:00 - 15:00</p>
-                <p className="text-sm text-gray-600">마지막날 15:30 마감</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center">
-              <CardHeader className="pb-4">
-                <MapPin className="w-8 h-8 mx-auto text-purple-600 mb-2" />
-                <CardTitle className="text-lg">장소</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="font-semibold">양재 aT센터 제1전시장</p>
-                <p className="text-sm text-gray-600">부스 번호: A-03</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center">
-              <CardHeader className="pb-4">
-                <Users className="w-8 h-8 mx-auto text-purple-600 mb-2" />
-                <CardTitle className="text-lg">참가대상</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="font-semibold">학부모 & 교육 전문가 등</p>
-                <p className="text-sm text-gray-600">사전등록 시 혜택</p>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
@@ -95,7 +43,7 @@ export default function Home() {
       {/* Service Introduction Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4">쉘비와 함께하는 맞춤 교육</h2>
+          <h2 className="text-3xl font-bold text-center mb-4">셸비와 함께하는 맞춤 교육</h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
             느린학습자 아이들을 위한 전문가 매칭 플랫폼으로,
             아이의 특성에 맞는 최적의 교육 전문가를 연결해드립니다.
@@ -172,7 +120,7 @@ export default function Home() {
                 <div className="flex items-start gap-3">
                   <Badge className="bg-purple-600">EVENT 4</Badge>
                   <div>
-                    <p className="font-semibold">상담 앱 셸메이트에 할인 쿠폰 지급</p>
+                    <p className="font-semibold">상담 앱 &quot;셸메이트&quot; 할인 쿠폰 지급</p>
                     <p className="text-sm text-gray-600">런칭 즉시 사용 가능한 사회서비스박람회 특전 쿠폰 지급!</p>
                   </div>
                 </div>
@@ -182,52 +130,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Location Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">오시는 길</h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <Card>
-              <CardHeader>
-                <CardTitle>양재 aT센터 제1전시장</CardTitle>
-                <CardDescription>서울특별시 서초구 강남대로 27</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <h4 className="font-semibold mb-2">🚇 지하철</h4>
-                  <p className="text-sm text-gray-600">
-                    신분당선 삼성역 4번 출구 (도보 60m)<br />
-                  </p>
-                </div>
-                
-                {/* <div>
-                  <h4 className="font-semibold mb-2">🚌 버스</h4>
-                  <p className="text-sm text-gray-600">
-                    간선: 146, 341, 360, 333, 740<br />
-                    지선: 2415, 3217, 3412, 3414, 3417
-                  </p>
-                </div>
-                
-                <div>
-                  <h4 className="font-semibold mb-2">🚗 주차</h4>
-                  <p className="text-sm text-gray-600">
-                    코엑스 지하주차장 이용<br />
-                    박람회 참가자 3시간 무료 (부스에서 확인 도장)
-                  </p>
-                </div> */}
-              </CardContent>
-            </Card>
-            
-            <div className="bg-gray-200 rounded-lg flex items-center justify-center">
-              <div className="text-center text-gray-500">
-                <MapPin className="w-16 h-16 mx-auto mb-4" />
-                <p>지도가 여기 표시됩니다</p>
-                <p className="text-sm">(카카오맵 또는 네이버맵 API 연동)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Floating Action Buttons */}
       <div className="fixed bottom-6 right-6 flex flex-col gap-3">
@@ -237,7 +139,7 @@ export default function Home() {
           onClick={() => window.open('http://pf.kakao.com/_gPdPn', '_blank')}
         >
           <MessageCircle className="w-5 h-5 mr-2" />
-          카톡 상담
+          카카오톡 채널 상담
         </Button>
         {/* <Button size="lg" className="rounded-full shadow-lg">
           <Phone className="w-5 h-5 mr-2" />

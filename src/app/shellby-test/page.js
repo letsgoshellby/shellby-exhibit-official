@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { MessageCircle, Star, Heart, Sparkles } from "lucide-react";
+import Image from 'next/image';
 
 const TestPage = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -242,7 +243,7 @@ const downloadResultImage = async () => {
                   </div> */}
                   {/* 실제 캐릭터 이미지 */}
                   <div className="w-48 h-48 mx-auto bg-white rounded-lg shadow-lg flex items-center justify-center p-4">
-                    <img 
+                    <Image 
                       src={`/images/${character.image}`}
                       alt={character.name}
                       className="max-w-full max-h-full object-contain"
@@ -367,7 +368,7 @@ const downloadResultImage = async () => {
       {/* Header */}
       <section className="relative bg-gradient-to-br from-[#059669] to-[#06b37a] text-white py-8">
         <div className="absolute top-4 left-4 text-white/80 text-sm">
-          ©푸망이
+          ©푸망
         </div>
         <div className="container mx-auto px-4 text-center">
           <Badge className="mb-4 bg-white/20 text-white border-white/30">
@@ -429,7 +430,7 @@ const downloadResultImage = async () => {
           </Card>
         </div>
       </section>
-
+    
     </main>
   );
 };
