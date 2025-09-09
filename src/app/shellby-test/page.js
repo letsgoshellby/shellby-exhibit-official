@@ -281,7 +281,7 @@ const downloadResultImage = async () => {
                     <Button 
                       size="lg" 
                       className="w-full bg-[#059669] hover:bg-[#047857] text-white font-semibold py-8 text-lg"
-                      onClick={() => window.open('https://forms.google.com/example-form', '_blank')}
+                      onClick={() => window.open('https://forms.gle/qtPowV7FRTM4L9Rj9', '_blank')}
                     >
                       우리 아이에게 맞는<br />
                       전문가 상담 경험해보기
