@@ -31,9 +31,9 @@ export default function Home() {
                 size="lg" 
                 variant="outline" 
                 className="text-[#059669] border-white bg-white hover:bg-gray-100 font-semibold"
-                onClick={() => window.open('https://forms.google.com/example-form', '_blank')}
+                onClick={() => window.open('https://forms.gle/qtPowV7FRTM4L9Rj9', '_blank')}
               >
-                상담 예약하기
+                출시 알림받기
               </Button>
             </div>
           </div>
